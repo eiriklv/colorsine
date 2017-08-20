@@ -10,10 +10,11 @@ class App extends Component {
 
     this.state = {
       time: Date.now(),
-      resolution: 200,
-      frequencyFactor: 0,
-      phaseFactor: 10,
+      resolution: 50,
+      frequencyFactor: 50,
+      phaseFactor: 3,
       modulationFactor: 6,
+      colorFactor: 5,
     };
   }
 
@@ -53,12 +54,13 @@ class App extends Component {
       frequencyFactor,
       phaseFactor,
       modulationFactor,
+      colorFactor,
     } = this.state;
 
     const height = 50;
 
     const sineGradient = createColorGradient({
-      frequencies: [5, 5, 5].map(factor => factor / resolution),
+      frequencies: [colorFactor, colorFactor, colorFactor].map(factor => factor / resolution),
       phases: [0, 2, 4],
       length: resolution,
     });
@@ -86,7 +88,7 @@ class App extends Component {
     const headerText = 'ColorSine';
 
     const headerGradient = createColorGradient({
-      frequencies: [0.3, 0.3, 0.3],
+      frequencies: [0.3, 0.3, 0,3],
       phases: [0, 2, 4],
       length: headerText.length,
     })
@@ -158,6 +160,17 @@ class App extends Component {
               minValue={0}
               value={this.state.modulationFactor}
               onChange={modulationFactor => this.setState({ modulationFactor })}
+            />
+          </div>
+        </div>
+        <div style={{ width: '100%', padding: 20 }}>
+          <h3 style={{ paddingBottom: 10 }}>Color Range:</h3>
+          <div>
+            <InputRange
+              maxValue={50}
+              minValue={0}
+              value={this.state.colorFactor}
+              onChange={colorFactor => this.setState({ colorFactor })}
             />
           </div>
         </div>
