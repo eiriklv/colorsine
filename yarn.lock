@@ -5082,6 +5082,10 @@ react-error-overlay@^1.0.10:
     settle-promise "1.0.0"
     source-map "0.5.6"
 
+react-github-fork-ribbon@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/react-github-fork-ribbon/-/react-github-fork-ribbon-0.5.0.tgz#59605ee7abe01fe48f16039dcc7fd82d840b02c5"
+
 react-input-range@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/react-input-range/-/react-input-range-1.2.1.tgz#10ff5fc1ec6ab9d95e15cddebe6f6879db2c3386"

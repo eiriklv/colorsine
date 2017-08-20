@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { range } from 'lodash';
-import InputRange from 'react-input-range';
 import createColorGradient from './create-color-gradient';
+import InputRange from 'react-input-range';
+import GitHubForkRibbon from 'react-github-fork-ribbon';
 
 class App extends Component {
   constructor(props) {
@@ -163,6 +164,17 @@ class App extends Component {
       </div>
     );
 
+    const githubRibbon = (
+      <GitHubForkRibbon
+        href="https://github.com/eiriklv/colorsine"
+        target="_blank"
+        position="left"
+        color="black"
+      >
+        Fork me on GitHub
+      </GitHubForkRibbon>
+    );
+
     return (
       <div style={{
         maxHeight: `100vh`,
@@ -170,6 +182,7 @@ class App extends Component {
       }}>
         {tiles}
         {toolbar}
+        {githubRibbon}
       </div>
     );
   }
