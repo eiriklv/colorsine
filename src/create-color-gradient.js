@@ -7,6 +7,8 @@ export default function makeColorGradient({
   width = 127,
   length = 50,
 }) {
+  console.log(frequencies)
+
   return range(length).map((_, index) => {
     const [r, g, b] = [
       Math.round(Math.sin((frequencies[0] * index) + phases[0]) * width + center),

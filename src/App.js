@@ -10,8 +10,8 @@ class App extends Component {
 
     this.state = {
       time: Date.now(),
-      resolution: 50,
-      frequencyFactor: 50,
+      resolution: 200,
+      frequencyFactor: 0,
       phaseFactor: 10,
       modulationFactor: 6,
     };
@@ -58,7 +58,7 @@ class App extends Component {
     const height = 50;
 
     const sineGradient = createColorGradient({
-      frequencies: [0.3, 0.3, 0.3],
+      frequencies: [5, 5, 5].map(factor => factor / resolution),
       phases: [0, 2, 4],
       length: resolution,
     });
