@@ -1,0 +1,31 @@
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+h1 {
+  color: #DDD;
+}
+
+h3 {
+  color: #DDD;
+}
+
+.input-range__label {
+  color: #FFF;
+}
+
+.input-range__slider {
+  background: rgb(212, 7, 145);
+  border-color: rgb(212, 7, 145);
+}
+
+.input-range__track--active {
+  background: rgb(212, 7, 145);
+}
