@@ -11,7 +11,7 @@ class App extends Component {
     this.state = {
       time: Date.now(),
       resolution: 50,
-      frequencyFactor: 50,
+      frequencyFactor: 12,
       phaseFactor: 3,
       modulationFactor: 6,
       colorFactor: 5,
