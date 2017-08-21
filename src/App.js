@@ -125,6 +125,7 @@ class App extends Component {
             <InputRange
               maxValue={1000}
               minValue={1}
+              step={1}
               value={this.state.resolution}
               onChange={resolution => this.setState({ resolution })}
             />
@@ -136,6 +137,7 @@ class App extends Component {
             <InputRange
               maxValue={500}
               minValue={0}
+              step={1}
               value={this.state.frequencyFactor}
               onChange={frequencyFactor => this.setState({ frequencyFactor })}
             />
@@ -147,6 +149,7 @@ class App extends Component {
             <InputRange
               maxValue={500}
               minValue={0}
+              step={1}
               value={this.state.phaseFactor}
               onChange={phaseFactor => this.setState({ phaseFactor })}
             />
@@ -158,6 +161,7 @@ class App extends Component {
             <InputRange
               maxValue={50}
               minValue={0}
+              step={1}
               value={this.state.modulationFactor}
               onChange={modulationFactor => this.setState({ modulationFactor })}
             />
@@ -169,6 +173,7 @@ class App extends Component {
             <InputRange
               maxValue={500}
               minValue={0}
+              step={1}
               value={this.state.colorFactor}
               onChange={colorFactor => this.setState({ colorFactor })}
             />
