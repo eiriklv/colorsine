@@ -78,7 +78,7 @@ class App extends Component {
 
       return (
         <div key={index} style={{
-          height: `${Math.floor(tileHeight)}vh`,
+          height: `${tileHeight}vh`,
           width: '100%',
           backgroundColor: color,
         }}></div>
