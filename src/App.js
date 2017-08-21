@@ -123,7 +123,7 @@ class App extends Component {
           <h3 style={{ paddingBottom: 10 }}>Resolution:</h3>
           <div>
             <InputRange
-              maxValue={500}
+              maxValue={1000}
               minValue={1}
               value={this.state.resolution}
               onChange={resolution => this.setState({ resolution })}
@@ -145,7 +145,7 @@ class App extends Component {
           <h3 style={{ paddingBottom: 10 }}>Frequency:</h3>
           <div>
             <InputRange
-              maxValue={100}
+              maxValue={500}
               minValue={0}
               value={this.state.phaseFactor}
               onChange={phaseFactor => this.setState({ phaseFactor })}
@@ -167,7 +167,7 @@ class App extends Component {
           <h3 style={{ paddingBottom: 10 }}>Color Range:</h3>
           <div>
             <InputRange
-              maxValue={50}
+              maxValue={500}
               minValue={0}
               value={this.state.colorFactor}
               onChange={colorFactor => this.setState({ colorFactor })}
