@@ -66,14 +66,12 @@ class App extends Component {
     });
 
     const tiles = range(resolution)
-    .map((tile, index, array) => {
-      const { length } = array;
+    .map((tile, index) => {
       const color = sineGradient[index];
       const amplitude = height;
-
       const frequency = frequencyFactor / 100000;
-      const modulation = 1 + (modulationFactor * (index / length));
-      const phase = (phaseFactor * index / length) * Math.PI;
+      const modulation = 1 + (modulationFactor * (index / resolution));
+      const phase = (phaseFactor * index / resolution) * Math.PI;
       const tileHeight = (amplitude * Math.sin(((2 * Math.PI) * (modulation * frequency * time)) + phase)) + amplitude;
 
       return (
